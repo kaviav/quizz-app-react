@@ -14,11 +14,13 @@
   },
   "scripts": {
     "start": "npx concurrently \"npm run server\" \"npm run react-start\"",
-    "build": "react-scripts build",
+    "build": "npm run react-build && npm run server-build",
+    "react-build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "react-start": "react-scripts start",
-    "server": "json-server --watch data/questions.json --port 9000"
+    "server": "json-server --watch data/questions.json --port 9000",
+    "server-build": "json-server --watch data/questions.json --port 9001" 
   },
   "eslintConfig": {
     "extends": [
