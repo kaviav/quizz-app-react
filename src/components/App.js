@@ -1,3 +1,8 @@
+// first start by command "npm start or npm run start"
+
+// then run the json server by command "npm run server"
+
+// or npm run dev to run both commands together . check packg.json
 import { useEffect, useReducer } from "react";
 
 import Header from "./Header";
